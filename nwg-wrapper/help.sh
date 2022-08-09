@@ -6,9 +6,11 @@
 #/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/default | jq --raw-output -r 'group_by(.category)[] | .[0].category + ":\n" + ((map(.action + ": <span foreground="#6699cc" face="serif">" + .keybinding + "</span>\n")) | tostring)' | sed 's/\\n/\n/g; s/\\t/\t/g; s/\",\"//g; s/\[\"//g; s/\"\]//g'
 #/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/default | jq --raw-output -r 'group_by(.category)[] | .[0].category + ":\n" + ((map("<div class=\"item\">"+ "<span class=\"action\">" + .action + "</span>: <span class=\"binding\" foreground=\"#6699cc\" face=\"serif\"><b>" + .keybinding + "</b></span></div>\n")) | tostring)' | sed 's/\\n/\n/g; s/\\t/\t/g; s/\",\"//g; s/\[\"//g; s/\"\]//g; s/\\\"/"/g'
 #/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/default | jq --raw-output -r 'group_by(.category)[] | .[0].category + ":\n" + ((map(.action + "\n")) | tostring)' | sed 's/\\n/\n/g; s/\\t/\t/g; s/\",\"//g; s/\[\"//g; s/\"\]//g'
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/default
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/shutdown
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/recording
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/resize
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/scratchpad
-/usr/share/sway/scripts/sbdp.py ~/.config/sway/modes/screenshot
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/default
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/shutdown
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/recording
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/resize
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/scratchpad
+$HOME/.config/sway/scripts/sbdp.py ~/.config/sway/modes/screenshot
+
+
