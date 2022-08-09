@@ -55,6 +55,8 @@ $bindsym XF86PowerOff exec $shutdown
 
 $bindsym XF86Calculator input type:touchpad events toggle enabled disabled, exec "pkill -RTMIN+7 waybar"
 
+$bindsym --locked Caps_Lock exec swaymsg input $(swaymsg -t get_inputs --raw | jq '[.[] | select(.type == "keyboard")][0] | .identifier') xkb_switch_layout next
+
 #$bindsym XF86TouchpadToggle input type:touchpad events toggle enabled disabled
 
 # Moving around:
