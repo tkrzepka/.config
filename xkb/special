@@ -257,7 +257,7 @@ xkb_symbols "dvorak" {
 
 alphanumeric_keys modifier_keys
 xkb_symbols "custom" {
-
+//https://wiki.linuxquestions.org/wiki/XF86_keyboard_symbols
     name[Group1] = "Custom";
 
     key <TLDE>	{[     grave,    asciitilde,    dead_grave,  dead_tilde ]};
@@ -274,42 +274,42 @@ xkb_symbols "custom" {
     key <AE11>	{[ bracketleft,  braceleft  ]};
     key <AE12>	{[bracketright,  braceright,    dead_tilde]};
 
-    key <AD01>	{[  NoSymbol  ]};
-    key <AD02>	{[  NoSymbol  ]};
-    key <AD03>	{[  NoSymbol  ]};
-    key <AD04>	{[  NoSymbol  ]};
-    key <AD05>	{[  NoSymbol  ]};
-    key <AD06>	{[  NoSymbol  ]};
-    key <AD07>	{[      Home  ]};
-    key <AD08>	{[      Next  ]};
-    key <AD09>	{[     Prior  ]};
-    key <AD10>	{[       End  ]};
-    key <AD11>	{[  NoSymbol  ]};
-    key <AD12>	{[  NoSymbol  ]};
+    key <AD01>	{[    NoSymbol  ]};
+    key <AD02>	{[    NoSymbol  ]};
+    key <AD03>	{[    NoSymbol  ]};
+    key <AD04>	{[    NoSymbol  ]};
+    key <AD05>	{[    NoSymbol  ]};
+    key <AD06>	{[    NoSymbol  ]};
+    key <AD07>	{[        Home  ]};
+    key <AD08>	{[        Next  ]};
+    key <AD09>	{[       Prior  ]};
+    key <AD10>	{[         End  ]};
+    key <AD11>	{[    NoSymbol  ]};
+    key <AD12>	{[    NoSymbol  ]};
 
-    key <AC01>	{[  NoSymbol  ]};
-    key <AC02>	{[  NoSymbol  ]};
-    key <AC03>	{[  NoSymbol  ]};
-    key <AC04>	{[  NoSymbol  ]};
-    key <AC05>	{[  NoSymbol  ]};
-    key <AC06>	{[  NoSymbol  ]};
-    key <AC07>	{[      Left  ]};
-    key <AC08>	{[        Up  ]};
-    key <AC09>	{[      Down  ]};
-    key <AC10>	{[     Right  ]};
-    key <AC11>	{[  NoSymbol  ]};
-    key <BKSL>	{[  NoSymbol  ]};
+    key <AC01>	{[    NoSymbol  ]};
+    key <AC02>	{[    NoSymbol  ]};
+    key <AC03>	{[    NoSymbol  ]};
+    key <AC04>	{[    NoSymbol  ]};
+    key <AC05>	{[    NoSymbol  ]};
+    key <AC06>	{[    NoSymbol  ]};
+    key <AC07>	{[        Left  ]};
+    key <AC08>	{[          Up  ]};
+    key <AC09>	{[        Down  ]};
+    key <AC10>	{[       Right  ]};
+    key <AC11>	{[    NoSymbol  ]};
+    key <BKSL>	{[    NoSymbol  ]};
 
-    key <AB01>	{[  NoSymbol  ]};
-    key <AB02>	{[  NoSymbol  ]};
-    key <AB03>	{[  NoSymbol  ]};
-    key <AB04>	{[  NoSymbol  ]};
-    key <AB05>	{[  NoSymbol  ]};
-    key <AB06>	{[ BackSpace  ]};
-    key <AB07>	{[  NoSymbol  ]};
-    key <AB08>	{[  NoSymbol  ]};
-    key <AB09>	{[  NoSymbol  ]};
-    key <AB10>	{[  NoSymbol  ]};
+    key <AB01>	{[    NoSymbol  ]};
+    key <AB02>	{[    XF86_Cut  ]};
+    key <AB03>	{[   XF86_Copy  ]};
+    key <AB04>	{[  XF86_Paste  ]};
+    key <AB05>	{[    NoSymbol  ]};
+    key <AB06>	{[   BackSpace  ]};
+    key <AB07>	{[    NoSymbol  ]};
+    key <AB08>	{[    NoSymbol  ]};
+    key <AB09>	{[    NoSymbol  ]};
+    key <AB10>	{[    NoSymbol  ]};
 };
 
 // Dvorak intl., with dead keys
