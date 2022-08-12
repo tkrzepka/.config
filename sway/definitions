@@ -64,7 +64,7 @@ set $menu rofi -show combi -combi-modi "drun,run" -terminal $term -ssh-command "
 set $locking swaylock --daemonize --color "$selection-color" --inside-clear-color "$text-color" --ring-color "$color0" --ring-clear-color "$color16" --ring-ver-color "$color16" --indicator-idle-visible --indicator-radius 90 --indicator-thickness 5 --show-failed-attempts --fade-in 0.2 --grace 2 --effect-blur 6x6 --effect-vignette 0.4:1 --ignore-empty-password --screenshots --clock
 
 ###Notification daemon configuration
-set $notifications mako --font "$term-font" --text-color "$text-color" --border-color "$accent-color" --background-color "$background-color" --border-size 1 --width 400 --height 200 --padding 10 --margin 10 --default-timeout 10000
+set $notifications mako --background-color "$background-color"
 
 ### Idle configuration
 # This will lock your screen after 300 seconds of inactivity, then turn off

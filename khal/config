@@ -1,8 +1,12 @@
+[default]
+highlight_event_days = true
+
 [calendars]
 
 [[private]]
 path = .local/share/khal/calendars/private
 type = calendar
+color = dark green
 
 [locale]
 timeformat = %H:%M
