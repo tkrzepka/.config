@@ -7,3 +7,7 @@
 /sublime-text
 /zeit.db
 /zsh/.zcompdump*
+/StardewValley
+*.bdic
+/vlc
+/configstore
